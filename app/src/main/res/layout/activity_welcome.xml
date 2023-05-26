@@ -23,7 +23,7 @@
         Acesse facilmente seus exames, consultas, alergias e mais. Tome decisões informadas e cuide
          melhor de si mesmo."
         android:textColor="@color/white"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="20dp"/>
 
     <Button
         android:id="@+id/getBtn"
@@ -34,8 +34,6 @@
         android:textColor="@color/green"
         android:textSize="20sp"
         app:cornerRadius="20dp"
-        android:layout_marginTop="20dp"/>
-
-
+        android:layout_marginTop="30dp"/>
 
 </LinearLayout>

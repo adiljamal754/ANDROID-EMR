@@ -13,12 +13,9 @@
         android:layout_width="wrap_content"
         android:layout_height="250dp"
         android:src="@drawable/a5"
-        android:contentDescription="Logo"
-        android:layout_marginTop="20dp"/>
+        android:contentDescription="Logo"/>
 
-
-
-        <com.google.android.material.textfield.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/userETLayout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="350dp"
@@ -32,7 +29,7 @@
             app:boxCornerRadiusTopStart="25dp"
             app:boxStrokeWidth="2dp"
             app:boxStrokeWidthFocused="2dp"
-            app:startIconDrawable="@drawable/ic_user">
+            app:startIconDrawable="@drawable/user">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/userET"
@@ -44,7 +41,9 @@
                 android:textColorHint="#757575"
                 tools:ignore="TextContrastCheck" />
 
-        </com.google.android.material.textfield.TextInputLayout> <com.google.android.material.textfield.TextInputLayout
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/passETLayout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="350dp"
@@ -71,7 +70,6 @@
                 tools:ignore="TextContrastCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
-
 
     <Button
         android:id="@+id/getBtn"
