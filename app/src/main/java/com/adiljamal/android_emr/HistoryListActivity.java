@@ -12,6 +12,7 @@ import android.widget.ListAdapter;
 
 import com.adiljamal.android_emr.databinding.ActivityHistoryListBinding;
 import com.adiljamal.android_emr.ui.home.history.cronics.CronicsActivity;
+import com.adiljamal.android_emr.ui.home.history.surgical.SurgicalHistoryActivity;
 
 public class HistoryListActivity extends AppCompatActivity {
 
@@ -31,10 +32,16 @@ public class HistoryListActivity extends AppCompatActivity {
         binding.historysLV.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                Intent it = new Intent(HistoryListActivity.this, CronicsActivity.class);
-                startActivity(it);
-
+                switch (position){
+                    case 0:
+                        Intent hisIt = new Intent(HistoryListActivity.this, CronicsActivity.class);
+                        startActivity(hisIt);
+                        break;
+                    case 1:
+                        Intent surgIt = new Intent(HistoryListActivity.this, SurgicalHistoryActivity.class);
+                        startActivity(surgIt);
+                        break;
+                }
             }
         });
 
