@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="100dp"
+    tools:context=".ui.services.ServicesFragment">
+
+    <Button
+        android:id="@+id/emergencyBtn"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="320dp"
+        android:layout_height="150dp"
+        android:layout_weight="0"
+        android:backgroundTint="@color/white"
+        android:backgroundTintMode="add"
+        android:drawableTop="@drawable/ambulance"
+        android:text="emergência"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/hospitalBtn"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="320dp"
+        android:layout_height="150dp"
+        android:layout_weight="0"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/white"
+        android:drawableTop="@drawable/baseline_local_hospital_75"
+        android:text="Hospitais próximos"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+    <Button
+        android:id="@+id/Btn"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="320dp"
+        android:layout_height="150dp"
+        android:layout_weight="0"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/white"
+        android:drawableTop="@drawable/d054fa8041a41c1f683c816861518bca"
+        android:text="histórico"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+</LinearLayout>

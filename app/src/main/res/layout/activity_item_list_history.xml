@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.history.itemListHistoryActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        android:outlineSpotShadowColor="@color/white">
+
+        <TextView
+            android:id="@+id/itemHistoryTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="historico"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:background="@color/green"/>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -39,7 +39,7 @@
             android:layout_weight="0"
             android:backgroundTint="@color/white"
             android:drawableTop="@drawable/d054fa8041a41c1f683c816861518bca"
-            android:text="history"
+            android:text="histórico"
             android:textAlignment="center"
             android:textSize="16sp"
             android:textStyle="bold"

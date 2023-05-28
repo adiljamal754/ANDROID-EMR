@@ -1,5 +1,6 @@
 package com.adiljamal.android_emr.ui.home;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.adiljamal.android_emr.HistoryListActivity;
 import com.adiljamal.android_emr.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
@@ -18,14 +20,19 @@ public class HomeFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        HomeViewModel homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
-        return root;
 
 
+        binding.historyBtn.setOnClickListener( v -> {
+            Intent historicIt = new Intent(getContext(), HistoryListActivity.class);
+            startActivity(historicIt);
+        });
+
+
+
+
+        return binding.getRoot();
     }
 
     @Override

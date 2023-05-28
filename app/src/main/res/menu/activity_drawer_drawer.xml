@@ -9,7 +9,7 @@
             android:icon="@drawable/baseline_home_24"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_Services"
+            android:id="@+id/nav_services"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Serviços de Saúde" />
         <item
