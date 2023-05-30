@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".EmergencyCallActivity">
+    <Button
+        android:id="@+id/crossBtn"
+        style="?android:attr/actionBarTabStyle"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="0"
+        android:backgroundTint="@color/green"
+        android:drawableLeft="@drawable/redcross"
+        android:text="Cruz Vermelha"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        tools:ignore="TextSizeCheck" />
+    <Button
+        android:id="@+id/AmbulanceBtn"
+        style="?android:attr/actionBarTabStyle"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="0"
+        android:backgroundTint="@color/green"
+        android:drawableLeft="@drawable/ambulance1"
+        android:text="Lin Ambulâncias"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        tools:ignore="TextSizeCheck" />
+    <Button
+        android:id="@+id/hospitalCentralBtn"
+        style="?android:attr/actionBarTabStyle"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="0"
+        android:backgroundTint="@color/green"
+        android:drawableLeft="@drawable/hospital"
+        android:text="Hospital Central de Maputo"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        tools:ignore="TextSizeCheck" />
+    <Button
+        android:id="@+id/hospitalPrivadoBtn"
+        style="?android:attr/actionBarTabStyle"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="0"
+        android:backgroundTint="@color/green"
+        android:drawableLeft="@drawable/hospital"
+        android:text="Clínica Privada de Maputo"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        tools:ignore="TextSizeCheck" />
+    <Button
+        android:id="@+id/hospitalJoseBtn"
+        style="?android:attr/actionBarTabStyle"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="0"
+        android:backgroundTint="@color/green"
+        android:drawableLeft="@drawable/hospital"
+        android:text="Hospital Geral José Macamo"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        tools:ignore="TextSizeCheck" />
+    <Button
+        android:id="@+id/policeBtn"
+        style="?android:attr/actionBarTabStyle"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_weight="0"
+        android:backgroundTint="@color/green"
+        android:drawableLeft="@drawable/police"
+        android:text="Comando Geral da Polícia"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        tools:ignore="TextSizeCheck" />
+
+
+</LinearLayout>

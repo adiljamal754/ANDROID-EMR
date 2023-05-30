@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.adiljamal.android_emr.EmergencyCallActivity;
 import com.adiljamal.android_emr.HospitalsActivity;
 import com.adiljamal.android_emr.databinding.FragmentServicesBinding;
 
@@ -23,10 +24,10 @@ public class ServicesFragment extends Fragment {
 
         binding = FragmentServicesBinding.inflate(inflater, container, false);
 
-      /*  binding.emergencyBtn.setOnClickListener( v -> {
-            Intent emergencyListIt = new Intent(getContext(), );
+      binding.emergencyBtn.setOnClickListener( v -> {
+            Intent emergencyListIt = new Intent(getContext(), EmergencyCallActivity.class);
             startActivity(emergencyListIt);
-        });*/
+        });
 
 
 

@@ -38,18 +38,5 @@
         android:textSize="16sp"
         android:textStyle="bold"
         tools:ignore="TextContrastCheck" />
-    <Button
-        android:id="@+id/Btn"
-        style="?android:attr/buttonBarButtonStyle"
-        android:layout_width="320dp"
-        android:layout_height="150dp"
-        android:layout_weight="0"
-        android:layout_marginTop="5dp"
-        android:backgroundTint="@color/white"
-        android:drawableTop="@drawable/d054fa8041a41c1f683c816861518bca"
-        android:text="histórico"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        tools:ignore="TextContrastCheck" />
+
 </LinearLayout>

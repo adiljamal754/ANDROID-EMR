@@ -23,7 +23,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/green"
+            android:background="@color/gray"
             android:paddingTop="15dp">
             <TextView
                 android:layout_width="match_parent"
@@ -32,7 +32,7 @@
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:layout_gravity="start"
-                android:textColor="@color/white"
+                android:textColor="@color/green_dark"
                 android:textAllCaps="true"/>
         </LinearLayout>
 
@@ -125,9 +125,41 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+            <Button
+                android:id="@+id/cancelIDBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/red"
+                android:drawableLeft="@drawable/baseline_close_24_white"
+                app:cornerRadius="30dp"
+                android:layout_marginTop="5dp"
+                />
+            <Button
+                android:id="@+id/saveIDBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/green"
+                android:drawableLeft="@drawable/baseline_check_24_white"
+                app:cornerRadius="30dp"
+                android:layout_marginTop="5dp"
+                />
+            <Button
+                android:id="@+id/editIDBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/green"
+                android:drawableLeft="@drawable/baseline_edit_24_white"
+                app:cornerRadius="30dp"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+
 
     </LinearLayout>
-
 
     ///Layout contacto
     <LinearLayout
@@ -139,7 +171,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
+            android:background="@color/green_dark"
             android:paddingTop="15dp">
             <TextView
                 android:layout_width="match_parent"
@@ -148,7 +180,7 @@
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:layout_gravity="start"
-                android:textColor="@color/green"
+                android:textColor="@color/gray"
                 android:textAllCaps="true"/>
         </LinearLayout>
 
@@ -219,6 +251,38 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+            <Button
+                android:id="@+id/cancelContactBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/red"
+                android:drawableLeft="@drawable/baseline_close_24_white"
+                app:cornerRadius="30dp"
+                android:layout_marginTop="5dp"
+                />
+            <Button
+                android:id="@+id/saveContactBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/baseline_check_24_green"
+                app:cornerRadius="30dp"
+                android:layout_marginTop="5dp"
+                />
+            <Button
+                android:id="@+id/editContactBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/baseline_edit_24_green"
+                app:cornerRadius="30dp"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
     </LinearLayout>
 
     ///Layout emergencia
@@ -231,7 +295,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/green"
+            android:background="@color/gray"
             android:paddingTop="15dp">
             <TextView
                 android:layout_width="match_parent"
@@ -240,7 +304,7 @@
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:layout_gravity="start"
-                android:textColor="@color/white"
+                android:textColor="@color/green_dark"
                 android:textAllCaps="true"/>
         </LinearLayout>
 
@@ -311,6 +375,40 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+            <Button
+                android:id="@+id/cancelEmergencyBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/red"
+                android:drawableLeft="@drawable/baseline_close_24_white"
+                app:cornerRadius="30dp"
+                android:layout_marginTop="5dp"
+                />
+            <Button
+                android:id="@+id/saveEmergencyBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/green"
+                android:drawableLeft="@drawable/baseline_check_24_white"
+                app:cornerRadius="30dp"
+                android:layout_marginTop="5dp"
+                />
+            <Button
+                android:id="@+id/editEmergencyBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/green"
+                android:drawableLeft="@drawable/baseline_edit_24_white"
+                app:cornerRadius="30dp"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+
+
     </LinearLayout>
 
     ///Layout seguros
@@ -323,7 +421,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
+            android:background="@color/green_dark"
             android:paddingTop="15dp">
             <TextView
                 android:layout_width="match_parent"
@@ -332,7 +430,7 @@
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:layout_gravity="start"
-                android:textColor="@color/green"
+                android:textColor="@color/gray"
                 android:textAllCaps="true"/>
         </LinearLayout>
 
@@ -425,6 +523,39 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+            <Button
+                android:id="@+id/cancelInsuranceBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/red"
+                android:drawableLeft="@drawable/baseline_close_24_white"
+                app:cornerRadius="30dp"
+                android:layout_marginTop="5dp"
+                />
+            <Button
+                android:id="@+id/saveInsuranceBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/baseline_check_24_green"
+                app:cornerRadius="30dp"
+                android:layout_marginTop="5dp"
+                />
+            <Button
+                android:id="@+id/editInsuranceBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/baseline_edit_24_green"
+                app:cornerRadius="30dp"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+
     </LinearLayout>
 
     ///Layout info adicional
@@ -437,7 +568,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/green"
+            android:background="@color/gray"
             android:paddingTop="15dp">
             <TextView
                 android:layout_width="match_parent"
@@ -446,7 +577,7 @@
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:layout_gravity="start"
-                android:textColor="@color/white"
+                android:textColor="@color/green_dark"
                 android:textAllCaps="true"/>
         </LinearLayout>
 
@@ -538,6 +669,40 @@
                 tools:ignore="TextContrastCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+            <Button
+                android:id="@+id/cancelAditionalBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/red"
+                android:drawableLeft="@drawable/baseline_close_24_white"
+                app:cornerRadius="30dp"
+                android:layout_marginTop="5dp"
+                />
+            <Button
+                android:id="@+id/saveAditionalBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/green"
+                android:drawableLeft="@drawable/baseline_check_24_white"
+                app:cornerRadius="30dp"
+                android:layout_marginTop="5dp"
+                />
+            <Button
+                android:id="@+id/editAditionalBtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/green"
+                android:drawableLeft="@drawable/baseline_edit_24_white"
+                app:cornerRadius="30dp"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+
 
     </LinearLayout>
 
