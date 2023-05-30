@@ -35,7 +35,7 @@ public class PerformedFragment extends Fragment {
 
         try {
             surgicalHistoryList.add(new SurgicalHistory("Cirurgia no pé", formato.parse("20-03-2012"), "Cirurgia realizada no pé direito. No hospital central de mapito devido a um objeto que entrou no dedo pelo dr. João"));
-      surgicalHistoryList.add(new SurgicalHistory("Cirurgia no dedo", formato.parse("02-06-2020"), "Cirurgia realizada no dedo da mão esquerda. No hospital central de mapito devido a um objeto que entrou no dedo pelo dr. João"));
+             surgicalHistoryList.add(new SurgicalHistory("Cirurgia no dedo", formato.parse("02-06-2020"), "Cirurgia realizada no dedo da mão esquerda. No hospital central de mapito devido a um objeto que entrou no dedo pelo dr. João"));
         } catch (ParseException e) {
             throw new RuntimeException(e);
         }
