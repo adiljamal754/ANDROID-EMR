@@ -1,4 +1,4 @@
-package com.adiljamal.android_emr.ui.slideshow;
+package com.adiljamal.android_emr.ui.news;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,18 +10,18 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.adiljamal.android_emr.databinding.FragmentSlideshowBinding;
+import com.adiljamal.android_emr.databinding.FragmentNewsBinding;
 
-public class SlideshowFragment extends Fragment {
+public class NewsFragment extends Fragment {
 
-    private FragmentSlideshowBinding binding;
+    private FragmentNewsBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         SlideshowViewModel slideshowViewModel =
                 new ViewModelProvider(this).get(SlideshowViewModel.class);
 
-        binding = FragmentSlideshowBinding.inflate(inflater, container, false);
+        binding = FragmentNewsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.textSlideshow;

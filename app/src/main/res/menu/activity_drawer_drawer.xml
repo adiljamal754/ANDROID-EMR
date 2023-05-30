@@ -10,15 +10,15 @@
             android:title="@string/menu_home" />
         <item
             android:id="@+id/nav_services"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/baseline_local_hospital_24_black"
             android:title="Serviços de Saúde" />
         <item
             android:id="@+id/nav_news"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/baseline_newspaper_24"
             android:title="Campanhas" />
         <item
             android:id="@+id/nav_profile"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/baseline_person_24"
             android:title="Dados pessoais" />
     </group>
 </menu>

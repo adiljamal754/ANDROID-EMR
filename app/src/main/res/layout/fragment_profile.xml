@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.profile.ProfileFragment"
+    tools:ignore="ExtraText">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    ///Layout identificacao
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:paddingTop="15dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Identificação"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="start"
+                android:textColor="@color/white"
+                android:textAllCaps="true"/>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nameETLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeWidth="3dp"
+            app:boxStrokeWidthFocused="3dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nome Completo"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColorHint="@color/green"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/birthdayETLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeWidth="3dp"
+            app:boxStrokeWidthFocused="3dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/birthdayET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Data de Nascimento"
+                android:inputType="date"
+                android:maxLines="1"
+                android:textColorHint="@color/green"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/genderETLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeWidth="3dp"
+            app:boxStrokeWidthFocused="3dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/genderET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Gênero"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColorHint="@color/green"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/biETLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeWidth="3dp"
+            app:boxStrokeWidthFocused="3dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/biET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="BI"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColorHint="@color/green"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+
+    ///Layout contacto
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="15dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="contacto"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="start"
+                android:textColor="@color/green"
+                android:textAllCaps="true"/>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/addressETLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeWidth="3dp"
+            app:boxStrokeWidthFocused="3dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/addressET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Endereç0"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColorHint="@color/green"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phoneETLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeWidth="3dp"
+            app:boxStrokeWidthFocused="3dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phoneET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Número de Telefone"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColorHint="@color/green"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailETLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeWidth="3dp"
+            app:boxStrokeWidthFocused="3dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColorHint="@color/green"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    ///Layout emergencia
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:paddingTop="15dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="informações de emergência"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="start"
+                android:textColor="@color/white"
+                android:textAllCaps="true"/>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emergencyNameETLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeWidth="3dp"
+            app:boxStrokeWidthFocused="3dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emergencyNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nome Completo"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColorHint="@color/green"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/relationETLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeWidth="3dp"
+            app:boxStrokeWidthFocused="3dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/relationET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Relação"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColorHint="@color/green"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emergencyNumberETLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeWidth="3dp"
+            app:boxStrokeWidthFocused="3dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emergencyNumberET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contacto de Emergência"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColorHint="@color/green"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    ///Layout seguros
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="15dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seguro de saúde"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="start"
+                android:textColor="@color/green"
+                android:textAllCaps="true"/>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/insuraceNameETLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeWidth="3dp"
+            app:boxStrokeWidthFocused="3dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/insuraceNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nome do Seguro"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColorHint="@color/green"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/policyNumberETLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeWidth="3dp"
+            app:boxStrokeWidthFocused="3dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/policyNumberET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Número de Apólice"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColorHint="@color/green"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/insuraceEmailETLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeWidth="3dp"
+            app:boxStrokeWidthFocused="3dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/insuraceEmailET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email da seguradora"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColorHint="@color/green"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/insuranceNumberETLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeWidth="3dp"
+            app:boxStrokeWidthFocused="3dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/insuranceNumberlET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contacto da seguradora"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColorHint="@color/green"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    ///Layout info adicional
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:paddingTop="15dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="informações adicionais"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="start"
+                android:textColor="@color/white"
+                android:textAllCaps="true"/>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nationalityETLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeWidth="3dp"
+            app:boxStrokeWidthFocused="3dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nationalityT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nacionalidade"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColorHint="@color/green"
+                tools:ignore="TextContrastCheck"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/maritalStatusETLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeWidth="3dp"
+            app:boxStrokeWidthFocused="3dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/maritalStatusET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Estado civil"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColorHint="@color/green"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/professionETLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeWidth="3dp"
+            app:boxStrokeWidthFocused="3dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/professionET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Profissão"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColorHint="@color/green"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/bloodGroupETLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeWidth="3dp"
+            app:boxStrokeWidthFocused="3dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/bloodGroupET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Grupo Sanguíneo"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColorHint="@color/green"
+                tools:ignore="TextContrastCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

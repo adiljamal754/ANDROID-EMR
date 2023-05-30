@@ -12,14 +12,19 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_services"
         android:name="com.adiljamal.android_emr.ui.services.ServicesFragment"
-        android:label="@string/menu_gallery"
+        android:label="Serviços de Saude"
         tools:layout="@layout/fragment_services" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.adiljamal.android_emr.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_news"
+        android:name="com.adiljamal.android_emr.ui.news.NewsFragment"
+        android:label="Notícias"
+        tools:layout="@layout/fragment_news" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.adiljamal.android_emr.ui.profile.ProfileFragment"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_profile" />
 </navigation>
