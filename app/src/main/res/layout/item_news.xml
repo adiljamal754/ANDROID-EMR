@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:orientation="vertical"
+    tools:context=".ui.news.NewsFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/newsImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:src="@drawable/cirurgianews" />
+            <TextView
+                android:id="@+id/newsTitleTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fístula obstétrica afecta mais de quatro mil mulheres por ano no país"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="2dp"
+                android:background="@color/white"/>
+
+            <TextView
+                android:id="@+id/newsInfoTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Pelo menos quatro mil mulheres contraem a fístula obstétricaespecialist..."
+                android:textColor="@color/black"
+                android:paddingBottom="5dp"
+                android:maxLength="90"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

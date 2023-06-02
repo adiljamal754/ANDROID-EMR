@@ -19,32 +19,32 @@ public class EmergencyCallActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         binding.AmbulanceBtn.setOnClickListener( v -> {
-            String phoneNumber = "tel:+258";
+            String phoneNumber = "tel:+25821489957";
             Intent callIntent = new Intent(Intent.ACTION_CALL, Uri.parse(phoneNumber));
             startActivity(callIntent);
         });
         binding.hospitalCentralBtn.setOnClickListener( v -> {
-            String phoneNumber = "tel:+258";
+            String phoneNumber = "tel:+25821325000";
             Intent callIntent = new Intent(Intent.ACTION_CALL, Uri.parse(phoneNumber));
             startActivity(callIntent);
         });
         binding.hospitalJoseBtn.setOnClickListener( v -> {
-            String phoneNumber = "tel:+258";
+            String phoneNumber = "tel:+25821400045";
             Intent callIntent = new Intent(Intent.ACTION_CALL, Uri.parse(phoneNumber));
             startActivity(callIntent);
         });
         binding.hospitalPrivadoBtn.setOnClickListener( v -> {
-            String phoneNumber = "tel:+258";
+            String phoneNumber = "tel:+25821492418";
             Intent callIntent = new Intent(Intent.ACTION_CALL, Uri.parse(phoneNumber));
             startActivity(callIntent);
         });
         binding.crossBtn.setOnClickListener( v -> {
-            String phoneNumber = "tel:+258";
+            String phoneNumber = "tel:+258823012251";
             Intent callIntent = new Intent(Intent.ACTION_CALL, Uri.parse(phoneNumber));
             startActivity(callIntent);
         });
         binding.policeBtn.setOnClickListener( v -> {
-            String phoneNumber = "tel:+258";
+            String phoneNumber = "tel:+25821314389";
             Intent callIntent = new Intent(Intent.ACTION_CALL, Uri.parse(phoneNumber));
             startActivity(callIntent);
         });

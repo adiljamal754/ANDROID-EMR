@@ -1,11 +1,21 @@
 package com.adiljamal.android_emr.ui.home.vaccine;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.Date;
 
 public class Vaccine {
 
+    @SerializedName("id")
+    private int id;
+
+    @SerializedName("name")
     private String name;
+
+    @SerializedName("date")
     private Date date;
+
+    @SerializedName("description")
     private String description;
 
     public Vaccine(String name, Date date, String description) {

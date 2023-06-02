@@ -22,14 +22,14 @@ public class CronicsActivity extends AppCompatActivity {
 
         List<ChronicDiseases> chronicDiseasesList = new ArrayList<>();
 
-        chronicDiseasesList.add(new ChronicDiseases("Asma", "Não"));
-        chronicDiseasesList.add(new ChronicDiseases("Alzheimer", "Não"));
-        chronicDiseasesList.add(new ChronicDiseases("AVC", "Não"));
-        chronicDiseasesList.add(new ChronicDiseases("Câncer", "Não"));
-        chronicDiseasesList.add(new ChronicDiseases("Doenças Cardio Vasculares", "Não"));
-        chronicDiseasesList.add(new ChronicDiseases("Diabetes", "Não"));
-        chronicDiseasesList.add(new ChronicDiseases("Depressão", "Não"));
-        chronicDiseasesList.add(new ChronicDiseases("Hipertensão", "Não"));
+        chronicDiseasesList.add(new ChronicDiseases("Asma", true));
+        chronicDiseasesList.add(new ChronicDiseases("Alzheimer", false));
+        chronicDiseasesList.add(new ChronicDiseases("AVC", true));
+        chronicDiseasesList.add(new ChronicDiseases("Câncer", false));
+        chronicDiseasesList.add(new ChronicDiseases("Doenças Cardio Vasculares", false));
+        chronicDiseasesList.add(new ChronicDiseases("Diabetes", true));
+        chronicDiseasesList.add(new ChronicDiseases("Depressão", false));
+        chronicDiseasesList.add(new ChronicDiseases("Hipertensão", false));
 
         binding.cronicsRV.setLayoutManager(new LinearLayoutManager(this));
 

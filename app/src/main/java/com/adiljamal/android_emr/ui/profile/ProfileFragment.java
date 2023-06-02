@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.adiljamal.android_emr.R;
 import com.adiljamal.android_emr.databinding.FragmentPerformedBinding;
@@ -23,13 +24,28 @@ public class ProfileFragment extends Fragment {
 
         disableAll();
 
+        //ID section buttons
         binding.editIDBtn.setOnClickListener( v -> {
-            enableIdLayout();
+            enableIdLayout(true);
         });
 
+        binding.cancelIDBtn.setOnClickListener( v -> {
+            enableIdLayout(false);
+        });
+
+
+        binding.saveIDBtn.setOnClickListener( v -> {
+            //implementar a actualização
+            Toast.makeText(getContext(), "Actualizado com sucesso", Toast.LENGTH_LONG).show();
+            enableIdLayout(false);
+        });
+
+
+        //contact section
         binding.editContactBtn.setOnClickListener( v -> {
             enableContactLayout();
         });
+
 
          binding.editEmergencyBtn.setOnClickListener( v -> {
             enableEmergencyLayout();
@@ -106,20 +122,34 @@ private void disableAll(){
 
 }
 
-private void enableIdLayout(){
-    binding.nameET.setEnabled(true);
-    binding.birthdayET.setEnabled(true);
-    binding.genderET.setEnabled(true);
-    binding.biET.setEnabled(true);
+//testar essa fi
+private void enableIdLayout(boolean enable){
+    binding.nameET.setEnabled(enable);
+    binding.birthdayET.setEnabled(enable);
+    binding.genderET.setEnabled(enable);
+    binding.biET.setEnabled(enable);
 
-    binding.saveIDBtn.setVisibility(View.VISIBLE);
-    binding.saveIDBtn.setClickable(true);
+    if(enable){
+        binding.saveIDBtn.setVisibility(View.VISIBLE);
+        binding.saveIDBtn.setClickable(enable);
 
-    binding.cancelIDBtn.setVisibility(View.VISIBLE);
-    binding.cancelIDBtn.setClickable(true);
+        binding.cancelIDBtn.setVisibility(View.VISIBLE);
+        binding.cancelIDBtn.setClickable(enable);
 
-    binding.editIDBtn.setVisibility(View.INVISIBLE);
-    binding.editIDBtn.setClickable(false);
+        binding.editIDBtn.setVisibility(View.INVISIBLE);
+        binding.editIDBtn.setClickable(!enable);
+    } else {
+        binding.saveIDBtn.setVisibility(View.INVISIBLE);
+        binding.saveIDBtn.setClickable(!enable);
+
+        binding.cancelIDBtn.setVisibility(View.INVISIBLE);
+        binding.cancelIDBtn.setClickable(!enable);
+
+        binding.editIDBtn.setVisibility(View.VISIBLE);
+        binding.editIDBtn.setClickable(!enable);
+    }
+
+
 }
 
     private void enableContactLayout(){
@@ -180,4 +210,6 @@ private void enableIdLayout(){
         binding.cancelAditionalBtn.setVisibility(View.INVISIBLE);
         binding.cancelAditionalBtn.setClickable(false);
     }
+
+
 }
