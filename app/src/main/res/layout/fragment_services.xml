@@ -18,25 +18,25 @@
         android:backgroundTint="@color/white"
         android:backgroundTintMode="add"
         android:drawableTop="@drawable/ambulance"
-        android:text="emergência"
+        android:text="@string/emerg_ncia"
         android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="bold"
-        tools:ignore="TextSizeCheck" />
+        tools:ignore="TextSizeCheck,TextContrastCheck" />
 
     <Button
         android:id="@+id/hospitalBtn"
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="320dp"
         android:layout_height="150dp"
-        android:layout_weight="0"
         android:layout_marginTop="5dp"
+        android:layout_weight="0"
         android:backgroundTint="@color/white"
         android:drawableTop="@drawable/baseline_local_hospital_75"
-        android:text="Hospitais próximos"
+        android:text="@string/hospitais_pr_ximos"
         android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="bold"
-        tools:ignore="TextContrastCheck" />
+        tools:ignore="TextContrastCheck,TextSizeCheck" />
 
 </LinearLayout>

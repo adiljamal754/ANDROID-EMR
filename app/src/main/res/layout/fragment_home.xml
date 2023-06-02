@@ -15,7 +15,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/emergencyBtn"
+            android:id="@+id/medicationBtn"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="150dp"
             android:layout_height="150dp"
@@ -23,9 +23,10 @@
             android:layout_weight="0"
             android:backgroundTint="@color/white"
             android:backgroundTintMode="add"
-            android:drawableTop="@drawable/ambulance"
-            android:text="emergência"
+            android:drawableTop="@drawable/baseline_medication_75"
+            android:text="@string/medica_o"
             android:textAlignment="center"
+            android:textColor="#43A047"
             android:textSize="16sp"
             android:textStyle="bold"
             tools:ignore="TextSizeCheck" />
@@ -38,8 +39,8 @@
             android:layout_marginStart="20dp"
             android:layout_weight="0"
             android:backgroundTint="@color/white"
-            android:drawableTop="@drawable/d054fa8041a41c1f683c816861518bca"
-            android:text="histórico"
+            android:drawableTop="@drawable/baseline_medical_information_24"
+            android:text="@string/hist_rico"
             android:textAlignment="center"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -63,7 +64,7 @@
             android:backgroundTint="@color/white"
             android:backgroundTintMode="add"
             android:drawableTop="@drawable/teste"
-            android:text="exames"
+            android:text="@string/exames"
             android:textAlignment="center"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -79,8 +80,9 @@
             android:layout_weight="0"
             android:backgroundTint="@color/white"
             android:drawableTop="@drawable/tratamento"
-            android:text="tratamentos"
+            android:text="@string/tratamentos"
             android:textAlignment="center"
+            android:textColor="#43A047"
             android:textSize="16sp"
             android:textStyle="bold"
             tools:ignore="TextSizeCheck,TextSizeCheck" />
@@ -94,6 +96,7 @@
 
         <Button
             android:id="@+id/allergyBtn"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginStart="40dp"
@@ -102,11 +105,11 @@
             android:backgroundTint="@color/white"
             android:backgroundTintMode="add"
             android:drawableTop="@drawable/alergia"
-            android:text="alergias"
+            android:text="@string/alergias"
             android:textAlignment="center"
+            android:textColor="#43A047"
             android:textSize="16sp"
-            android:textStyle="bold"
-            style="?android:attr/buttonBarButtonStyle" />
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/vaccinationBtn"
@@ -117,8 +120,8 @@
             android:layout_marginTop="10dp"
             android:layout_weight="0"
             android:backgroundTint="@color/white"
-            android:drawableTop="@drawable/vacina"
-            android:text="vacina"
+            android:drawableTop="@drawable/baseline_vaccines"
+            android:text="@string/vacina"
             android:textAlignment="center"
             android:textSize="16sp"
             android:textStyle="bold"

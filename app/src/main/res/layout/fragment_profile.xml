@@ -28,7 +28,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Identificação"
+                android:text="@string/identifica_o"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:layout_gravity="start"
@@ -51,7 +51,7 @@
                 android:id="@+id/nameET"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nome Completo"
+                android:hint="@string/nome_completo"
                 android:inputType="text"
                 android:maxLines="1"
                 android:textColorHint="@color/green"
@@ -73,7 +73,7 @@
                 android:id="@+id/birthdayET"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Data de Nascimento"
+                android:hint="@string/data_de_nascimento"
                 android:inputType="date"
                 android:maxLines="1"
                 android:textColorHint="@color/green"
@@ -95,7 +95,7 @@
                 android:id="@+id/genderET"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Gênero"
+                android:hint="@string/g_nero"
                 android:inputType="text"
                 android:maxLines="1"
                 android:textColorHint="@color/green"
@@ -117,7 +117,7 @@
                 android:id="@+id/biET"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="BI"
+                android:hint="@string/bi"
                 android:inputType="text"
                 android:maxLines="1"
                 android:textColorHint="@color/green"
@@ -129,33 +129,39 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="end">
+
             <Button
                 android:id="@+id/cancelIDBtn"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:backgroundTint="@color/red"
-                android:drawableLeft="@drawable/baseline_close_24_white"
-                app:cornerRadius="30dp"
                 android:layout_marginTop="5dp"
-                />
+                android:backgroundTint="@color/red"
+                android:drawableStart="@drawable/baseline_close_24_white"
+                app:cornerRadius="30dp"
+                tools:ignore="SpeakableTextPresentCheck"
+                style="?android:attr/buttonBarButtonStyle" />
+
             <Button
                 android:id="@+id/saveIDBtn"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
+                android:layout_marginTop="5dp"
                 android:backgroundTint="@color/green"
                 android:drawableLeft="@drawable/baseline_check_24_white"
                 app:cornerRadius="30dp"
-                android:layout_marginTop="5dp"
-                />
+                tools:ignore="RtlHardcoded,SpeakableTextPresentCheck"
+                style="?android:attr/buttonBarButtonStyle" />
+
             <Button
                 android:id="@+id/editIDBtn"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
+                android:layout_marginTop="5dp"
                 android:backgroundTint="@color/green"
                 android:drawableLeft="@drawable/baseline_edit_24_white"
                 app:cornerRadius="30dp"
-                android:layout_marginTop="5dp"
-                />
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+                style="?android:attr/buttonBarButtonStyle" />
         </LinearLayout>
 
 
@@ -173,15 +179,16 @@
             android:layout_height="wrap_content"
             android:background="@color/green_dark"
             android:paddingTop="15dp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="contacto"
-                android:textSize="24sp"
-                android:textStyle="bold"
                 android:layout_gravity="start"
-                android:textColor="@color/gray"
-                android:textAllCaps="true"/>
+                android:text="@string/contacto"
+                android:textAllCaps="true"
+                android:textColor="#C8E6C9"
+                android:textSize="24sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -199,7 +206,7 @@
                 android:id="@+id/addressET"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Endereç0"
+                android:hint="@string/endere_0"
                 android:inputType="text"
                 android:maxLines="1"
                 android:textColorHint="@color/green"
@@ -221,7 +228,7 @@
                 android:id="@+id/phoneET"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Número de Telefone"
+                android:hint="@string/n_mero_de_telefone"
                 android:inputType="number"
                 android:maxLines="1"
                 android:textColorHint="@color/green"
@@ -243,7 +250,7 @@
                 android:id="@+id/emailET"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email"
+                android:hint="@string/email"
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
                 android:textColorHint="@color/green"
@@ -255,33 +262,36 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="end">
+
             <Button
                 android:id="@+id/cancelContactBtn"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
+                android:layout_marginTop="5dp"
                 android:backgroundTint="@color/red"
                 android:drawableLeft="@drawable/baseline_close_24_white"
                 app:cornerRadius="30dp"
-                android:layout_marginTop="5dp"
-                />
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
             <Button
                 android:id="@+id/saveContactBtn"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
+                android:layout_marginTop="5dp"
                 android:backgroundTint="@color/white"
                 android:drawableLeft="@drawable/baseline_check_24_green"
                 app:cornerRadius="30dp"
-                android:layout_marginTop="5dp"
-                />
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
             <Button
                 android:id="@+id/editContactBtn"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
+                android:layout_marginTop="5dp"
                 android:backgroundTint="@color/white"
                 android:drawableLeft="@drawable/baseline_edit_24_green"
                 app:cornerRadius="30dp"
-                android:layout_marginTop="5dp"
-                />
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
         </LinearLayout>
     </LinearLayout>
 
@@ -300,7 +310,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="informações de emergência"
+                android:text="@string/informa_es_de_emerg_ncia"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:layout_gravity="start"
@@ -323,7 +333,7 @@
                 android:id="@+id/emergencyNameET"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nome Completo"
+                android:hint="@string/nome_completo"
                 android:inputType="text"
                 android:maxLines="1"
                 android:textColorHint="@color/green"
@@ -345,7 +355,7 @@
                 android:id="@+id/relationET"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Relação"
+                android:hint="@string/rela_o"
                 android:inputType="text"
                 android:maxLines="1"
                 android:textColorHint="@color/green"
@@ -367,7 +377,7 @@
                 android:id="@+id/emergencyNumberET"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Contacto de Emergência"
+                android:hint="@string/contacto_de_emerg_ncia"
                 android:inputType="number"
                 android:maxLines="1"
                 android:textColorHint="@color/green"
@@ -405,7 +415,7 @@
                 android:drawableLeft="@drawable/baseline_edit_24_white"
                 app:cornerRadius="30dp"
                 android:layout_marginTop="5dp"
-                />
+                style="?android:attr/buttonBarButtonStyle" />
         </LinearLayout>
 
 
@@ -426,7 +436,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Seguro de saúde"
+                android:text="@string/seguro_de_sa_de"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:layout_gravity="start"
@@ -449,7 +459,7 @@
                 android:id="@+id/insuraceNameET"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nome do Seguro"
+                android:hint="@string/nome_do_seguro"
                 android:inputType="text"
                 android:maxLines="1"
                 android:textColorHint="@color/green"
@@ -471,7 +481,7 @@
                 android:id="@+id/policyNumberET"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Número de Apólice"
+                android:hint="@string/n_mero_de_ap_lice"
                 android:inputType="number"
                 android:maxLines="1"
                 android:textColorHint="@color/green"
@@ -493,7 +503,7 @@
                 android:id="@+id/insuraceEmailET"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email da seguradora"
+                android:hint="@string/email_da_seguradora"
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
                 android:textColorHint="@color/green"
@@ -515,7 +525,7 @@
                 android:id="@+id/insuranceNumberlET"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Contacto da seguradora"
+                android:hint="@string/contacto_da_seguradora"
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
                 android:textColorHint="@color/green"
@@ -535,7 +545,7 @@
                 android:drawableLeft="@drawable/baseline_close_24_white"
                 app:cornerRadius="30dp"
                 android:layout_marginTop="5dp"
-                />
+                style="?android:attr/buttonBarButtonStyle" />
             <Button
                 android:id="@+id/saveInsuranceBtn"
                 android:layout_width="60dp"
@@ -544,7 +554,7 @@
                 android:drawableLeft="@drawable/baseline_check_24_green"
                 app:cornerRadius="30dp"
                 android:layout_marginTop="5dp"
-                />
+                style="?android:attr/buttonBarButtonStyle" />
             <Button
                 android:id="@+id/editInsuranceBtn"
                 android:layout_width="60dp"
@@ -553,7 +563,7 @@
                 android:drawableLeft="@drawable/baseline_edit_24_green"
                 app:cornerRadius="30dp"
                 android:layout_marginTop="5dp"
-                />
+                style="?android:attr/buttonBarButtonStyle" />
         </LinearLayout>
 
     </LinearLayout>
@@ -573,7 +583,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="informações adicionais"
+                android:text="@string/informa_es_adicionais"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:layout_gravity="start"
@@ -596,7 +606,7 @@
                 android:id="@+id/nationalityT"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nacionalidade"
+                android:hint="@string/nacionalidade"
                 android:inputType="text"
                 android:maxLines="1"
                 android:textColorHint="@color/green"
@@ -618,7 +628,7 @@
                 android:id="@+id/maritalStatusET"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Estado civil"
+                android:hint="@string/estado_civil"
                 android:inputType="text"
                 android:maxLines="1"
                 android:textColorHint="@color/green"
@@ -640,7 +650,7 @@
                 android:id="@+id/professionET"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Profissão"
+                android:hint="@string/profiss_o"
                 android:inputType="text"
                 android:maxLines="1"
                 android:textColorHint="@color/green"
@@ -662,7 +672,7 @@
                 android:id="@+id/bloodGroupET"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Grupo Sanguíneo"
+                android:hint="@string/grupo_sangu_neo"
                 android:inputType="text"
                 android:maxLines="1"
                 android:textColorHint="@color/green"
@@ -682,7 +692,8 @@
                 android:drawableLeft="@drawable/baseline_close_24_white"
                 app:cornerRadius="30dp"
                 android:layout_marginTop="5dp"
-                />
+                tools:ignore="RtlHardcoded"
+                style="?android:attr/buttonBarButtonStyle" />
             <Button
                 android:id="@+id/saveAditionalBtn"
                 android:layout_width="60dp"
@@ -691,7 +702,7 @@
                 android:drawableLeft="@drawable/baseline_check_24_white"
                 app:cornerRadius="30dp"
                 android:layout_marginTop="5dp"
-                />
+                tools:ignore="ButtonStyle" />
             <Button
                 android:id="@+id/editAditionalBtn"
                 android:layout_width="60dp"
@@ -700,7 +711,8 @@
                 android:drawableLeft="@drawable/baseline_edit_24_white"
                 app:cornerRadius="30dp"
                 android:layout_marginTop="5dp"
-                />
+                tools:ignore="RtlHardcoded"
+                style="?android:attr/buttonBarButtonStyle" />
         </LinearLayout>
 
 

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,7 +14,7 @@
         android:layout_weight="0"
         android:backgroundTint="@color/green"
         android:drawableLeft="@drawable/redcross"
-        android:text="Cruz Vermelha"
+        android:text="@string/cruz_vermelha"
         android:textSize="16sp"
         android:textColor="@color/black"
         tools:ignore="TextSizeCheck" />
@@ -27,7 +26,7 @@
         android:layout_weight="0"
         android:backgroundTint="@color/green"
         android:drawableLeft="@drawable/ambulance1"
-        android:text="Lin Ambulâncias"
+        android:text="@string/lin_ambul_ncias"
         android:textSize="16sp"
         android:textColor="@color/black"
         tools:ignore="TextSizeCheck" />
@@ -39,7 +38,7 @@
         android:layout_weight="0"
         android:backgroundTint="@color/green"
         android:drawableLeft="@drawable/hospital"
-        android:text="Hospital Central de Maputo"
+        android:text="@string/hospital_central_de_maputo"
         android:textSize="16sp"
         android:textColor="@color/black"
         tools:ignore="TextSizeCheck" />
@@ -51,7 +50,7 @@
         android:layout_weight="0"
         android:backgroundTint="@color/green"
         android:drawableLeft="@drawable/hospital"
-        android:text="Clínica Privada de Maputo"
+        android:text="@string/cl_nica_privada_de_maputo"
         android:textSize="16sp"
         android:textColor="@color/black"
         tools:ignore="TextSizeCheck" />
@@ -63,10 +62,10 @@
         android:layout_weight="0"
         android:backgroundTint="@color/green"
         android:drawableLeft="@drawable/hospital"
-        android:text="Hospital Geral José Macamo"
+        android:text="@string/hospital_geral_jos_macamo"
         android:textSize="16sp"
         android:textColor="@color/black"
-        tools:ignore="TextSizeCheck" />
+        tools:ignore="HardcodedText,TextSizeCheck" />
     <Button
         android:id="@+id/policeBtn"
         style="?android:attr/actionBarTabStyle"
@@ -75,7 +74,7 @@
         android:layout_weight="0"
         android:backgroundTint="@color/green"
         android:drawableLeft="@drawable/police"
-        android:text="Comando Geral da Polícia"
+        android:text="@string/comando_geral_da_pol_cia"
         android:textSize="16sp"
         android:textColor="@color/black"
         tools:ignore="TextSizeCheck" />

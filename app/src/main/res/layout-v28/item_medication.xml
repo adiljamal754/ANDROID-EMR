@@ -1,51 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingBottom="5dp"
-    android:orientation="vertical"
-    tools:context=".ui.news.NewsFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+
         app:cardCornerRadius="8dp"
-        app:cardElevation="8dp">
+        app:cardElevation="8dp"
+        android:outlineSpotShadowColor="@color/white">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/newsImageView"
-                android:layout_width="wrap_content"
-                android:layout_height="250dp"
-                android:src="@drawable/cirurgianews"
-                android:contentDescription="@string/news_pic" />
             <TextView
-                android:id="@+id/newsTitleTV"
+                android:id="@+id/medicationNameTV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/f_stula_obst_trica_afecta_mais_de_quatro_mil_mulheres_por_ano_no_pa_s"
+                android:text="Medication"
                 android:textSize="24sp"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:padding="2dp"
                 android:background="@color/white"/>
 
             <TextView
-                android:id="@+id/newsInfoTV"
+                android:id="@+id/dosageTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
-                android:text="@string/pelo_menos_quatro_mil_mulheres_contraem_a_f_stula_obst_tricaespecialist"
+                android:padding="5dp"
+                android:text="1 comprimido"
                 android:textColor="@color/black"
-                android:paddingBottom="5dp"
-                android:maxLength="90"/>
+                android:textSize="14sp"
+                 />
+            <TextView
+                android:id="@+id/instructionsTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:text="8-8 horas"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                />
         </LinearLayout>
+     
+
 
     </androidx.cardview.widget.CardView>
 </LinearLayout>

@@ -13,27 +13,30 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="250dp"
+        android:contentDescription="@string/logo"
         android:src="@drawable/a5"
-        android:contentDescription="Logo"/>
+        tools:ignore="ImageContrastCheck" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="Bem-vindo ao nosso EMR - sua solução completa para gerenciamento de saúde!
         Acesse facilmente seus exames, consultas, alergias e mais. Tome decisões informadas e cuide
          melhor de si mesmo."
         android:textColor="@color/white"
-        android:layout_marginTop="20dp"/>
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/getBtn"
         android:layout_width="200dp"
         android:layout_height="60dp"
+        android:layout_marginTop="30dp"
         android:backgroundTint="@color/white"
-        android:text="Get Started"
-        android:textColor="@color/green"
+        android:text="@string/get_started"
+        android:textColor="#43A047"
         android:textSize="20sp"
         app:cornerRadius="20dp"
-        android:layout_marginTop="30dp"/>
+        tools:ignore="TextSizeCheck" />
 
 </LinearLayout>

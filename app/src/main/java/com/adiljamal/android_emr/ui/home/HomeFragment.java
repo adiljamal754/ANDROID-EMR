@@ -13,6 +13,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.adiljamal.android_emr.HistoryListActivity;
 import com.adiljamal.android_emr.databinding.FragmentHomeBinding;
+import com.adiljamal.android_emr.ui.home.medication.MedicationActivity;
 import com.adiljamal.android_emr.ui.home.vaccine.VaccineListActivity;
 
 public class HomeFragment extends Fragment {
@@ -35,6 +36,10 @@ public class HomeFragment extends Fragment {
             startActivity(vaccineIt);
         });
 
+        binding.medicationBtn.setOnClickListener(v -> {
+            Intent meicationIt = new Intent(getContext(), MedicationActivity.class);
+            startActivity(meicationIt);
+        });
 
         return binding.getRoot();
     }
