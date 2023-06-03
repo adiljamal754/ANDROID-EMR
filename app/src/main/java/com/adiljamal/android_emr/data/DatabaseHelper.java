@@ -52,7 +52,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     @SuppressLint("Range")
-    public ArrayList<Medication> getAllStudents() {
+    public ArrayList<Medication> getAllMedicarions() {
         ArrayList<Medication> students = new ArrayList<>();
         String selectQuery = "SELECT * FROM " + TABLE_MEDICATION;
         SQLiteDatabase db = this.getWritableDatabase();

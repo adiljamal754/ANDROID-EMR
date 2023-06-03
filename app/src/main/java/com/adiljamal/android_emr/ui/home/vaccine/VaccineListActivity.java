@@ -6,14 +6,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.adiljamal.android_emr.data.ApiService;
+import com.adiljamal.android_emr.data.ApiServiceInterfaces;
 import com.adiljamal.android_emr.databinding.ActivityVaccineListBinding;
-import com.adiljamal.android_emr.ui.home.history.surgical.SurgeryAdapter;
-import com.adiljamal.android_emr.ui.home.history.surgical.SurgicalHistory;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -29,7 +24,7 @@ public class VaccineListActivity extends AppCompatActivity {
 
     private static final String API_BASE_URL = "https://192.168.168.252:7022/api/";
 
-    private ApiService apiService;
+    private ApiServiceInterfaces apiService;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +49,7 @@ public class VaccineListActivity extends AppCompatActivity {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
-        apiService = retrofit.create(ApiService.class);
+        apiService = retrofit.create(ApiServiceInterfaces.class);
 
         Call<List<Vaccine>> call = apiService.getVaccines();
         call.enqueue(new Callback<List<Vaccine>>() {

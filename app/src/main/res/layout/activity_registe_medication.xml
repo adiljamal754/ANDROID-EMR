@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ui.home.medication.RegisteMedicationActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameETLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeWidth="3dp"
+        app:boxStrokeWidthFocused="3dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do medicamento"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColorHint="@color/green"
+            tools:ignore="TextContrastCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dosageETLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeWidth="3dp"
+        app:boxStrokeWidthFocused="3dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dosageET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dosagem"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColorHint="@color/green"
+            tools:ignore="TextContrastCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/descETLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeWidth="3dp"
+        app:boxStrokeWidthFocused="3dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/descET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Instruções"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColorHint="@color/green"
+            tools:ignore="TextContrastCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/red"
+            android:drawableLeft="@drawable/baseline_close_24_white"
+            app:cornerRadius="30dp"
+            android:text="Cancelar"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/green"
+            android:drawableLeft="@drawable/baseline_check_24_white"
+            app:cornerRadius="30dp"
+            android:text="adicionar"
+            android:textColor="@color/white"
+            tools:ignore="RtlHardcoded,SpeakableTextPresentCheck"
+            style="?android:attr/buttonBarButtonStyle" />
+   </LinearLayout>
+
+</LinearLayout>

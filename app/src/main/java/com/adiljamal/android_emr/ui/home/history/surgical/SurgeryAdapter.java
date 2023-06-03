@@ -24,6 +24,9 @@ public class SurgeryAdapter extends RecyclerView.Adapter<SurgeryAdapter.ViewHold
         this.surgicalHistories = surgicalHistories;
         this.context = context;
     }
+    public SurgeryAdapter( Context context) {
+        this.context = context;
+    }
 
     @NonNull
     @Override
@@ -44,6 +47,10 @@ public class SurgeryAdapter extends RecyclerView.Adapter<SurgeryAdapter.ViewHold
     @Override
     public int getItemCount() {
         return surgicalHistories.size();
+    }
+
+    public void setSurgeries(List<SurgicalHistory> surgeries) {
+        surgicalHistories = surgeries;
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
